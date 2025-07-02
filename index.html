@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIZHI Security System</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js"></script>
+    <script src="app.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        video, canvas { max-width: 640px; border: 1px solid #ccc; }
+        .status { margin: 10px 0; }
+        .text-green-500 { color: green; }
+        .text-red-500 { color: red; }
+        #recentAlerts { max-height: 200px; overflow-y: auto; }
+    </style>
+</head>
+<body>
+    <h1>MIZHI Security Surveillance System</h1>
+    
+    <div>
+        <h3>Video Feed</h3>
+        <video id="videoFeed" autoplay playsinline></video>
+        <canvas id="canvasFeed"></canvas>
+    </div>
+    
+    <div>
+        <button id="startCamera">Start Camera</button>
+        <button id="stopCamera" disabled>Stop Camera</button>
+        <button id="enableProcessing">Enable Processing</button>
+    </div>
+    
+    <div class="status">
+        <p>Connection Status: <span id="statusConnection" class="text-red-500">Disconnected</span></p>
+        <p>Camera Status: <span id="statusCamera" class="text-red-500">Camera Inactive</span></p>
+        <p>Processing Status: <span id="statusProcessing" class="text-red-500">Processing Disabled</span></p>
+    </div>
+    
+    <div>
+        <h3>Statistics</h3>
+        <p>Threats Detected: <span id="threatsDetected">0</span></p>
+        <p>Alerts Triggered: <span id="alertsTriggered">0</span></p>
+        <p>Frames Processed: <span id="framesProcessed">0</span></p>
+        <p>Session Time: <span id="sessionTime">00:00:00</span></p>
+    </div>
+    
+    <div>
+        <h3>Recent Alerts</h3>
+        <ul id="recentAlerts"></ul>
+    </div>
+    
+    <div>
+        <h3>Upload Video</h3>
+        <input type="file" id="videoUpload" accept="video/*">
+        <button id="uploadButton">Upload Video</button>
+    </div>
+    
+    <div>
+        <h3>Settings</h3>
+        <label for="confidenceInput">Confidence Threshold (0.1-1.0):</label>
+        <input type="number" id="confidenceInput" min="0.1" max="1.0" step="0.1" value="0.7">
+        <button id="updateConfidence">Update Confidence</button>
+    </div>
+</body>
+</html>

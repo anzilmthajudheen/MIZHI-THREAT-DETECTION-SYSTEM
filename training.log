@@ -1,0 +1,261 @@
+2025-07-01 15:47:01,706 - __main__ - INFO - Starting training: model=small, config=standard
+2025-07-01 15:47:01,707 - __main__ - INFO - Performing comprehensive dataset validation...
+2025-07-01 15:47:01,707 - __main__ - ERROR - Training pipeline failed: Dataset config file not found: dataset.yaml
+2025-07-01 15:50:23,564 - __main__ - INFO - Starting training: model=small, config=standard
+2025-07-01 15:50:23,564 - __main__ - INFO - Performing comprehensive dataset validation...
+2025-07-01 15:50:23,564 - __main__ - ERROR - Training pipeline failed: Dataset config file not found: dataset.yaml
+2025-07-01 16:22:05,526 - __main__ - INFO - Starting training: model=small, config=standard
+2025-07-01 16:22:05,526 - __main__ - INFO - Performing comprehensive dataset validation...
+2025-07-01 16:22:05,556 - __main__ - ERROR - Training pipeline failed: Dataset config file not found: dataset.yaml
+2025-07-01 16:35:04,617 - __main__ - INFO - Starting training: model=small, config=standard
+2025-07-01 16:35:04,617 - __main__ - INFO - Performing comprehensive dataset validation...
+2025-07-01 16:35:04,617 - __main__ - ERROR - Training pipeline failed: Dataset config file not found: dataset.yaml
+2025-07-01 16:35:44,555 - __main__ - INFO - Starting training: model=small, config=standard
+2025-07-01 16:35:44,556 - __main__ - INFO - Performing comprehensive dataset validation...
+2025-07-01 16:35:44,556 - __main__ - ERROR - Training pipeline failed: Dataset config file not found: dataset.yaml
+2025-07-01 16:41:34,164 - __main__ - INFO - Checking for config file at: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset.yaml
+2025-07-01 16:41:34,164 - __main__ - INFO - Current working directory: c:\Users\Ajmal\Downloads\Documents\program\mizhi
+2025-07-01 16:41:34,164 - __main__ - INFO - Dataset config file found: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset.yaml
+2025-07-01 16:41:34,164 - __main__ - INFO - Config file contents:
+# Path to the dataset
+path: C:/Users/Ajmal/Downloads/Documents/program/mizhi/custom_dataset/dataset  # dataset root dir
+train: images/train  # train images (relative to 'path') 4000 images
+val: images/val  # val images (relative to 'path') 156 images
+test:  # test images (optional)
+
+# Classes
+names:
+  0: Knife
+  1: Handgun
+
+2025-07-01 16:41:34,164 - __main__ - INFO - Starting training: model=small, config=standard
+2025-07-01 16:41:34,164 - __main__ - INFO - Performing comprehensive dataset validation...
+2025-07-01 16:41:34,164 - __main__ - INFO - Using config file: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset.yaml
+2025-07-01 16:41:34,166 - __main__ - INFO - Dataset base path: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset
+2025-07-01 16:41:34,166 - __main__ - INFO - Train path: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset\images\train
+2025-07-01 16:41:34,166 - __main__ - INFO - Val path: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset\images\val
+2025-07-01 16:42:46,985 - __main__ - INFO - Dataset Statistics:
+2025-07-01 16:42:46,989 - __main__ - INFO -   Train: 4000 images, 4000 with labels
+2025-07-01 16:42:47,005 - __main__ - INFO -     Avg dimensions: 938ï¿½785
+2025-07-01 16:42:47,006 - __main__ - INFO -   Val: 156 images, 156 with labels
+2025-07-01 16:42:47,007 - __main__ - INFO -     Avg dimensions: 665ï¿½520
+2025-07-01 16:42:47,007 - __main__ - INFO -   Total annotations: 4651
+2025-07-01 16:42:47,007 - __main__ - INFO -   Class distribution:
+2025-07-01 16:42:47,008 - __main__ - INFO -     Knife: 2268
+2025-07-01 16:42:47,008 - __main__ - INFO -     Handgun: 2383
+2025-07-01 16:42:47,022 - __main__ - INFO - Initializing small model: yolov8s.pt
+2025-07-01 16:43:31,829 - __main__ - INFO - Training Configuration:
+2025-07-01 16:43:31,829 - __main__ - INFO -   epochs: 10
+2025-07-01 16:43:31,829 - __main__ - INFO -   imgsz: 640
+2025-07-01 16:43:31,829 - __main__ - INFO -   batch: 6
+2025-07-01 16:43:31,829 - __main__ - INFO -   lr0: 0.01
+2025-07-01 16:43:31,829 - __main__ - INFO -   lrf: 0.01
+2025-07-01 16:43:31,829 - __main__ - INFO -   momentum: 0.937
+2025-07-01 16:43:31,829 - __main__ - INFO -   weight_decay: 0.0005
+2025-07-01 16:43:31,829 - __main__ - INFO -   warmup_epochs: 3
+2025-07-01 16:43:31,829 - __main__ - INFO -   warmup_momentum: 0.8
+2025-07-01 16:43:31,829 - __main__ - INFO -   warmup_bias_lr: 0.1
+2025-07-01 16:43:31,829 - __main__ - INFO -   box: 7.5
+2025-07-01 16:43:31,829 - __main__ - INFO -   cls: 0.5
+2025-07-01 16:43:31,829 - __main__ - INFO -   dfl: 1.5
+2025-07-01 16:43:31,829 - __main__ - INFO -   pose: 12.0
+2025-07-01 16:43:31,829 - __main__ - INFO -   kobj: 1.0
+2025-07-01 16:43:31,830 - __main__ - INFO -   label_smoothing: 0.0
+2025-07-01 16:43:31,830 - __main__ - INFO -   nbs: 64
+2025-07-01 16:43:31,830 - __main__ - INFO -   overlap_mask: True
+2025-07-01 16:43:31,830 - __main__ - INFO -   mask_ratio: 4
+2025-07-01 16:43:31,830 - __main__ - INFO -   dropout: 0.0
+2025-07-01 16:43:31,830 - __main__ - INFO -   val: True
+2025-07-01 16:43:31,830 - __main__ - INFO -   patience: 50
+2025-07-01 16:43:31,830 - __main__ - INFO -   save_period: 10
+2025-07-01 16:43:31,830 - __main__ - INFO -   workers: 8
+2025-07-01 16:43:31,830 - __main__ - INFO -   seed: 0
+2025-07-01 16:43:31,830 - __main__ - INFO -   deterministic: True
+2025-07-01 16:43:31,830 - __main__ - INFO -   single_cls: False
+2025-07-01 16:43:31,830 - __main__ - INFO -   rect: False
+2025-07-01 16:43:31,831 - __main__ - INFO -   cos_lr: False
+2025-07-01 16:43:31,831 - __main__ - INFO -   close_mosaic: 10
+2025-07-01 16:43:31,831 - __main__ - INFO -   resume: False
+2025-07-01 16:43:31,831 - __main__ - INFO -   amp: True
+2025-07-01 16:43:31,831 - __main__ - INFO -   fraction: 1.0
+2025-07-01 16:43:31,831 - __main__ - INFO -   profile: False
+2025-07-01 16:43:31,831 - __main__ - INFO -   device: cpu
+2025-07-01 16:43:31,831 - __main__ - INFO -   hsv_h: 0.015
+2025-07-01 16:43:31,831 - __main__ - INFO -   hsv_s: 0.7
+2025-07-01 16:43:31,831 - __main__ - INFO -   hsv_v: 0.4
+2025-07-01 16:43:31,831 - __main__ - INFO -   degrees: 0.0
+2025-07-01 16:43:31,831 - __main__ - INFO -   translate: 0.1
+2025-07-01 16:43:31,832 - __main__ - INFO -   scale: 0.5
+2025-07-01 16:43:31,832 - __main__ - INFO -   shear: 0.0
+2025-07-01 16:43:31,832 - __main__ - INFO -   perspective: 0.0
+2025-07-01 16:43:31,832 - __main__ - INFO -   flipud: 0.0
+2025-07-01 16:43:31,832 - __main__ - INFO -   fliplr: 0.5
+2025-07-01 16:43:31,832 - __main__ - INFO -   mosaic: 1.0
+2025-07-01 16:43:31,832 - __main__ - INFO -   mixup: 0.0
+2025-07-01 16:43:31,832 - __main__ - INFO -   copy_paste: 0.0
+2025-07-01 16:43:31,832 - __main__ - INFO - Passing data path to YOLO: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset.yaml
+2025-07-01 16:56:05,429 - __main__ - INFO - Checking for config file at: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset.yaml
+2025-07-01 16:56:05,429 - __main__ - INFO - Current working directory: c:\Users\Ajmal\Downloads\Documents\program\mizhi
+2025-07-01 16:56:05,429 - __main__ - INFO - Dataset config file found: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset.yaml
+2025-07-01 16:56:05,429 - __main__ - INFO - Config file contents:
+# Path to the dataset
+path: C:/Users/Ajmal/Downloads/Documents/program/mizhi/custom_dataset/dataset  # dataset root dir
+train: images/train  # train images (relative to 'path') 4000 images
+val: images/val  # val images (relative to 'path') 156 images
+test:  # test images (optional)
+
+# Classes
+names:
+  0: Knife
+  1: Handgun
+
+2025-07-01 16:56:05,429 - __main__ - INFO - Starting training: model=small, config=standard
+2025-07-01 16:56:05,429 - __main__ - INFO - Performing comprehensive dataset validation...
+2025-07-01 16:56:05,429 - __main__ - INFO - Using config file: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset.yaml
+2025-07-01 16:56:05,430 - __main__ - INFO - Dataset base path: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset
+2025-07-01 16:56:05,430 - __main__ - INFO - Train path: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset\images\train
+2025-07-01 16:56:05,430 - __main__ - INFO - Val path: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset\images\val
+2025-07-01 16:56:07,068 - __main__ - INFO - Dataset Statistics:
+2025-07-01 16:56:07,068 - __main__ - INFO -   Train: 4000 images, 4000 with labels
+2025-07-01 16:56:07,068 - __main__ - INFO -     Avg dimensions: 938×785
+2025-07-01 16:56:07,068 - __main__ - INFO -   Val: 156 images, 156 with labels
+2025-07-01 16:56:07,068 - __main__ - INFO -     Avg dimensions: 665×520
+2025-07-01 16:56:07,068 - __main__ - INFO -   Total annotations: 4651
+2025-07-01 16:56:07,068 - __main__ - INFO -   Class distribution:
+2025-07-01 16:56:07,068 - __main__ - INFO -     Knife: 2268
+2025-07-01 16:56:07,068 - __main__ - INFO -     Handgun: 2383
+2025-07-01 16:56:07,070 - __main__ - INFO - Initializing small model: yolov8s.pt
+2025-07-01 16:56:07,121 - __main__ - INFO - Training Configuration:
+2025-07-01 16:56:07,121 - __main__ - INFO -   epochs: 10
+2025-07-01 16:56:07,121 - __main__ - INFO -   imgsz: 640
+2025-07-01 16:56:07,121 - __main__ - INFO -   batch: 6
+2025-07-01 16:56:07,121 - __main__ - INFO -   lr0: 0.01
+2025-07-01 16:56:07,122 - __main__ - INFO -   lrf: 0.01
+2025-07-01 16:56:07,122 - __main__ - INFO -   momentum: 0.937
+2025-07-01 16:56:07,122 - __main__ - INFO -   weight_decay: 0.0005
+2025-07-01 16:56:07,122 - __main__ - INFO -   warmup_epochs: 3
+2025-07-01 16:56:07,122 - __main__ - INFO -   warmup_momentum: 0.8
+2025-07-01 16:56:07,122 - __main__ - INFO -   warmup_bias_lr: 0.1
+2025-07-01 16:56:07,122 - __main__ - INFO -   box: 7.5
+2025-07-01 16:56:07,122 - __main__ - INFO -   cls: 0.5
+2025-07-01 16:56:07,122 - __main__ - INFO -   dfl: 1.5
+2025-07-01 16:56:07,122 - __main__ - INFO -   pose: 12.0
+2025-07-01 16:56:07,122 - __main__ - INFO -   kobj: 1.0
+2025-07-01 16:56:07,122 - __main__ - INFO -   label_smoothing: 0.0
+2025-07-01 16:56:07,122 - __main__ - INFO -   nbs: 64
+2025-07-01 16:56:07,122 - __main__ - INFO -   overlap_mask: True
+2025-07-01 16:56:07,122 - __main__ - INFO -   mask_ratio: 4
+2025-07-01 16:56:07,122 - __main__ - INFO -   dropout: 0.0
+2025-07-01 16:56:07,122 - __main__ - INFO -   val: True
+2025-07-01 16:56:07,122 - __main__ - INFO -   patience: 5
+2025-07-01 16:56:07,122 - __main__ - INFO -   save_period: 2
+2025-07-01 16:56:07,123 - __main__ - INFO -   workers: 8
+2025-07-01 16:56:07,123 - __main__ - INFO -   seed: 0
+2025-07-01 16:56:07,123 - __main__ - INFO -   deterministic: True
+2025-07-01 16:56:07,123 - __main__ - INFO -   single_cls: False
+2025-07-01 16:56:07,123 - __main__ - INFO -   rect: False
+2025-07-01 16:56:07,123 - __main__ - INFO -   cos_lr: False
+2025-07-01 16:56:07,123 - __main__ - INFO -   close_mosaic: 2
+2025-07-01 16:56:07,123 - __main__ - INFO -   resume: False
+2025-07-01 16:56:07,123 - __main__ - INFO -   amp: True
+2025-07-01 16:56:07,123 - __main__ - INFO -   fraction: 1.0
+2025-07-01 16:56:07,123 - __main__ - INFO -   profile: False
+2025-07-01 16:56:07,123 - __main__ - INFO -   device: cpu
+2025-07-01 16:56:07,123 - __main__ - INFO -   hsv_h: 0.015
+2025-07-01 16:56:07,123 - __main__ - INFO -   hsv_s: 0.7
+2025-07-01 16:56:07,123 - __main__ - INFO -   hsv_v: 0.4
+2025-07-01 16:56:07,123 - __main__ - INFO -   degrees: 0.0
+2025-07-01 16:56:07,123 - __main__ - INFO -   translate: 0.1
+2025-07-01 16:56:07,123 - __main__ - INFO -   scale: 0.5
+2025-07-01 16:56:07,123 - __main__ - INFO -   shear: 0.0
+2025-07-01 16:56:07,124 - __main__ - INFO -   perspective: 0.0
+2025-07-01 16:56:07,124 - __main__ - INFO -   flipud: 0.0
+2025-07-01 16:56:07,124 - __main__ - INFO -   fliplr: 0.5
+2025-07-01 16:56:07,124 - __main__ - INFO -   mosaic: 1.0
+2025-07-01 16:56:07,124 - __main__ - INFO -   mixup: 0.0
+2025-07-01 16:56:07,124 - __main__ - INFO -   copy_paste: 0.0
+2025-07-01 16:56:07,124 - __main__ - INFO - Passing data path to YOLO: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset.yaml
+2025-07-01 16:56:07,125 - __main__ - ERROR - Training failed: train() got multiple values for keyword argument 'data'
+2025-07-01 16:56:07,125 - __main__ - ERROR - Training failed!
+2025-07-01 17:00:11,394 - __main__ - INFO - Checking for config file at: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset.yaml
+2025-07-01 17:00:11,395 - __main__ - INFO - Current working directory: c:\Users\Ajmal\Downloads\Documents\program\mizhi
+2025-07-01 17:00:11,395 - __main__ - INFO - Dataset config file found: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset.yaml
+2025-07-01 17:00:11,396 - __main__ - INFO - Config file contents:
+# Path to the dataset
+path: C:/Users/Ajmal/Downloads/Documents/program/mizhi/custom_dataset/dataset  # dataset root dir
+train: images/train  # train images (relative to 'path') 4000 images
+val: images/val  # val images (relative to 'path') 156 images
+test:  # test images (optional)
+
+# Classes
+names:
+  0: Knife
+  1: Handgun
+
+2025-07-01 17:00:11,396 - __main__ - INFO - Starting training: model=small, config=standard
+2025-07-01 17:00:11,397 - __main__ - INFO - Performing comprehensive dataset validation...
+2025-07-01 17:00:11,397 - __main__ - INFO - Using config file: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset.yaml
+2025-07-01 17:00:11,403 - __main__ - INFO - Dataset base path: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset
+2025-07-01 17:00:11,404 - __main__ - INFO - Train path: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset\images\train
+2025-07-01 17:00:11,404 - __main__ - INFO - Val path: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset\images\val
+2025-07-01 17:00:16,618 - __main__ - INFO - Dataset Statistics:
+2025-07-01 17:00:16,620 - __main__ - INFO -   Train: 4000 images, 4000 with labels
+2025-07-01 17:00:16,621 - __main__ - INFO -     Avg dimensions: 938x785
+2025-07-01 17:00:16,621 - __main__ - INFO -   Val: 156 images, 156 with labels
+2025-07-01 17:00:16,621 - __main__ - INFO -     Avg dimensions: 665x520
+2025-07-01 17:00:16,622 - __main__ - INFO -   Total annotations: 4651
+2025-07-01 17:00:16,623 - __main__ - INFO -   Class distribution:
+2025-07-01 17:00:16,624 - __main__ - INFO -     Knife: 2268
+2025-07-01 17:00:16,624 - __main__ - INFO -     Handgun: 2383
+2025-07-01 17:00:16,625 - __main__ - INFO - Dataset validation passed
+2025-07-01 17:00:16,625 - __main__ - INFO - Initializing small model: yolov8s.pt
+2025-07-01 17:00:16,796 - __main__ - INFO - Training Configuration:
+2025-07-01 17:00:16,797 - __main__ - INFO -   epochs: 10
+2025-07-01 17:00:16,797 - __main__ - INFO -   imgsz: 640
+2025-07-01 17:00:16,797 - __main__ - INFO -   batch: 6
+2025-07-01 17:00:16,797 - __main__ - INFO -   lr0: 0.01
+2025-07-01 17:00:16,798 - __main__ - INFO -   lrf: 0.01
+2025-07-01 17:00:16,798 - __main__ - INFO -   momentum: 0.937
+2025-07-01 17:00:16,800 - __main__ - INFO -   weight_decay: 0.0005
+2025-07-01 17:00:16,800 - __main__ - INFO -   warmup_epochs: 3
+2025-07-01 17:00:16,802 - __main__ - INFO -   warmup_momentum: 0.8
+2025-07-01 17:00:16,802 - __main__ - INFO -   warmup_bias_lr: 0.1
+2025-07-01 17:00:16,802 - __main__ - INFO -   box: 7.5
+2025-07-01 17:00:16,804 - __main__ - INFO -   cls: 0.5
+2025-07-01 17:00:16,804 - __main__ - INFO -   dfl: 1.5
+2025-07-01 17:00:16,805 - __main__ - INFO -   pose: 12.0
+2025-07-01 17:00:16,805 - __main__ - INFO -   kobj: 1.0
+2025-07-01 17:00:16,805 - __main__ - INFO -   label_smoothing: 0.0
+2025-07-01 17:00:16,805 - __main__ - INFO -   nbs: 64
+2025-07-01 17:00:16,805 - __main__ - INFO -   overlap_mask: True
+2025-07-01 17:00:16,806 - __main__ - INFO -   mask_ratio: 4
+2025-07-01 17:00:16,806 - __main__ - INFO -   dropout: 0.0
+2025-07-01 17:00:16,807 - __main__ - INFO -   val: True
+2025-07-01 17:00:16,807 - __main__ - INFO -   patience: 5
+2025-07-01 17:00:16,808 - __main__ - INFO -   save_period: 2
+2025-07-01 17:00:16,810 - __main__ - INFO -   workers: 8
+2025-07-01 17:00:16,810 - __main__ - INFO -   seed: 0
+2025-07-01 17:00:16,811 - __main__ - INFO -   deterministic: True
+2025-07-01 17:00:16,811 - __main__ - INFO -   single_cls: False
+2025-07-01 17:00:16,812 - __main__ - INFO -   rect: False
+2025-07-01 17:00:16,813 - __main__ - INFO -   cos_lr: False
+2025-07-01 17:00:16,813 - __main__ - INFO -   close_mosaic: 2
+2025-07-01 17:00:16,814 - __main__ - INFO -   resume: False
+2025-07-01 17:00:16,814 - __main__ - INFO -   amp: True
+2025-07-01 17:00:16,815 - __main__ - INFO -   fraction: 1.0
+2025-07-01 17:00:16,815 - __main__ - INFO -   profile: False
+2025-07-01 17:00:16,815 - __main__ - INFO -   device: cpu
+2025-07-01 17:00:16,815 - __main__ - INFO -   hsv_h: 0.015
+2025-07-01 17:00:16,815 - __main__ - INFO -   hsv_s: 0.7
+2025-07-01 17:00:16,815 - __main__ - INFO -   hsv_v: 0.4
+2025-07-01 17:00:16,816 - __main__ - INFO -   degrees: 0.0
+2025-07-01 17:00:16,816 - __main__ - INFO -   translate: 0.1
+2025-07-01 17:00:16,816 - __main__ - INFO -   scale: 0.5
+2025-07-01 17:00:16,816 - __main__ - INFO -   shear: 0.0
+2025-07-01 17:00:16,816 - __main__ - INFO -   perspective: 0.0
+2025-07-01 17:00:16,816 - __main__ - INFO -   flipud: 0.0
+2025-07-01 17:00:16,817 - __main__ - INFO -   fliplr: 0.5
+2025-07-01 17:00:16,817 - __main__ - INFO -   mosaic: 1.0
+2025-07-01 17:00:16,817 - __main__ - INFO -   mixup: 0.0
+2025-07-01 17:00:16,818 - __main__ - INFO -   copy_paste: 0.0
+2025-07-01 17:00:16,818 - __main__ - INFO - Passing data path to YOLO: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\dataset.yaml

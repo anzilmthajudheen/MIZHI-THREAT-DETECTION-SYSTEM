@@ -1,0 +1,13 @@
+2025-07-01 15:30:34,462 - __main__ - INFO - Installing required packages...
+2025-07-01 15:31:35,714 - __main__ - ERROR - Train directory not found: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\images\train
+2025-07-01 15:31:35,714 - __main__ - ERROR - Setup failed: Train directory not found: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\images\train
+2025-07-01 15:37:07,668 - __main__ - INFO - Installing required packages...
+2025-07-01 15:37:20,747 - __main__ - ERROR - Train directory not found: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\images\train
+2025-07-01 15:37:20,747 - __main__ - ERROR - Setup failed: Train directory not found: C:\Users\Ajmal\Downloads\Documents\program\mizhi\custom_dataset\images\train
+2025-07-01 15:38:46,749 - __main__ - INFO - Installing required packages...
+2025-07-01 15:38:58,412 - __main__ - ERROR - Dataset config file not found: dataset.yaml
+2025-07-01 15:38:58,412 - __main__ - ERROR - Setup failed: Dataset config file not found: dataset.yaml
+2025-07-01 15:40:05,671 - __main__ - INFO - Installing required packages...
+2025-07-01 15:40:21,000 - __main__ - INFO - Dataset Verification Results:
+2025-07-01 15:40:21,000 - __main__ - INFO -   Train: 4000 images, 4000 labels, 4000 matched
+2025-07-01 15:40:21,001 - __main__ - INFO -   Val: 156 images, 156 labels, 156 matched

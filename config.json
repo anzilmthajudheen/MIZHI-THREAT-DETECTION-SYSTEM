@@ -1,0 +1,18 @@
+{
+    "model_path": "C:/Users/Ajmal/Downloads/Documents/program/mizhi/runs/detect/mizhi_weapon_detection_small/weights/best.pt",
+    "dataset_path": "C:/Users/Ajmal/Downloads/Documents/program/mizhi/custom_dataset/data.yaml",
+    "models_dir": "weights",
+    "yolo_model": "best.pt",
+    "weapon_classes": ["Knife", "Handgun"],
+    "confidence_threshold": 0.7,
+    "sequence_length": 30,
+    "input_shape": [128, 128, 3],
+    "lstm_epochs": 10,
+    "lstm_batch_size": 8,
+    "alert_threshold": 0.7,
+    "video_source": 0,
+    "sample_limit": 5000,
+    "real_weapon_threshold": 0.8,
+    "screen_detection_enabled": true,
+    "depth_analysis_enabled": true
+}
