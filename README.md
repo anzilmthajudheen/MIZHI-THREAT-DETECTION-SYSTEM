@@ -1,6 +1,7 @@
 ## MIZHI-THREAT-DETECTION-SYSTEM
 
 Mizhi: Enhanced Weapon Threat Detection System
+
 Mizhi is an advanced real-time security surveillance system designed to detect weapons and suspicious behavior using computer vision and deep learning techniques. It features an intuitive web-based interface for easy monitoring and control.
 
 ✨ Features
